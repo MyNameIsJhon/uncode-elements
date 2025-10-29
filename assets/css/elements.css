@@ -1,0 +1,346 @@
+/* =========== Variables par défaut =========== */
+.es-it {
+  --es-gap: 12px;
+  --es-icon-size: 18px;
+  --es-text-size: 14px;
+
+  --es-icon-color: currentColor;
+  --es-text-color: inherit;
+
+  --es-bg: #f4f5f7;
+  --es-bd: rgba(0, 0, 0, 0.08);
+
+  --es-py: 6px;
+  --es-px: 12px;
+  --es-radius: 9999px;
+
+  --es-sep-gap: 8px;
+
+  color: var(--es-text-color);
+}
+
+/* =========== Chip (pilule) =========== */
+.es-it.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--es-gap);
+  padding: var(--es-py) var(--es-px);
+  border-radius: var(--es-radius);
+  font-size: var(--es-text-size);
+  line-height: 1.25;
+  width: max-content;
+  max-width: 100%;
+}
+.es-it.is-reverse {
+  flex-direction: row-reverse;
+}
+.es-it.align-center {
+  justify-content: center;
+}
+.es-it.align-end {
+  justify-content: flex-end;
+}
+
+.es-it .es-it-icon {
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+.es-it i,
+.es-it .dashicons,
+.es-it .es-it-svg,
+.es-it .es-it-emoji {
+  font-size: var(--es-icon-size);
+  width: auto;
+  height: auto;
+  color: var(--es-icon-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.es-it .dashicons {
+  font-size: var(--es-icon-size);
+  width: var(--es-icon-size);
+  height: var(--es-icon-size);
+}
+.es-it .es-it-svg svg {
+  width: var(--es-icon-size);
+  height: var(--es-icon-size);
+  fill: var(--es-icon-color);
+}
+.es-it .es-it-text {
+  margin: 0;
+}
+
+/* Variants */
+.es-it.chip.chip-soft {
+  background: var(--es-bg);
+  border: 1px solid transparent;
+}
+.es-it.chip.chip-outline {
+  background: transparent;
+  border: 1px solid var(--es-bd);
+}
+.es-it.chip.chip-solid {
+  background: var(--es-text-color);
+  color: #fff;
+  --es-icon-color: #fff;
+  border: 1px solid transparent;
+}
+
+/* Séparateur */
+.es-it .es-sep {
+  opacity: 0.6;
+  margin: 0 var(--es-sep-gap);
+}
+
+/* Alignement dans la colonne parente (WPBakery Column) */
+.self-start {
+  align-self: flex-start;
+}
+.self-center {
+  align-self: center;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-stretch {
+  align-self: stretch;
+}
+
+/* Tailles rapides (si utilisées) */
+.size-s {
+  --es-text-size: 13px;
+  --es-icon-size: 16px;
+  --es-py: 5px;
+  --es-px: 10px;
+}
+.size-m {
+  --es-text-size: 15px;
+  --es-icon-size: 20px;
+  --es-py: 7px;
+  --es-px: 14px;
+}
+.size-l {
+  --es-text-size: 17px;
+  --es-icon-size: 24px;
+  --es-py: 9px;
+  --es-px: 16px;
+}
+
+/* =========== Effets Hover =========== */
+.es-it.hover-lift .es-it-link {
+  transition: transform 0.25s ease;
+}
+.es-it.hover-lift .es-it-link:hover {
+  transform: translateY(-4px);
+}
+
+.es-it.hover-pulse .es-it-link:hover .es-it-icon {
+  animation: es-pulse 0.6s ease both;
+}
+@keyframes es-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.es-it.hover-h-rotate .es-it-link {
+  transition: transform 0.25s ease;
+}
+.es-it.hover-h-rotate .es-it-link:hover .es-it-icon {
+  transform: rotate(15deg);
+}
+
+/* =========== Animations scroll =========== */
+.es-anim {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.es-anim.es-anim-fade {
+  transform: none;
+}
+.es-anim.es-anim-slide-up {
+  transform: translateY(16px);
+}
+.es-anim.es-anim-slide-left {
+  transform: translateX(16px);
+}
+.es-anim.es-anim-slide-right {
+  transform: translateX(-16px);
+}
+.es-anim.es-anim-zoom {
+  transform: scale(0.94);
+}
+.es-anim.es-anim-rotate {
+  transform: rotate(-6deg);
+}
+
+.es-anim.es-in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--es-dur, 600ms) ease var(--es-delay, 0ms),
+    transform var(--es-dur, 600ms) ease var(--es-delay, 0ms);
+}
+/* Variables communes */
+.evoe {
+  --es-gap: 12px;
+  --es-icon-size: 18px;
+  --es-text-size: 14px;
+  --es-icon-color: currentColor;
+  --es-text-color: inherit;
+  --es-bg: #f4f5f7;
+  --es-bd: rgba(0, 0, 0, 0.08);
+  --es-py: 6px;
+  --es-px: 12px;
+  --es-radius: 9999px;
+  --es-sep-gap: 8px;
+  color: var(--es-text-color);
+}
+
+/* Chip/pill */
+.evoe.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--es-gap);
+  padding: var(--es-py) var(--es-px);
+  border-radius: var(--es-radius);
+  font-size: var(--es-text-size);
+  line-height: 1.25;
+  width: max-content;
+  max-width: 100%;
+}
+.evoe.is-reverse {
+  flex-direction: row-reverse;
+}
+.self-start {
+  align-self: flex-start;
+}
+.self-center {
+  align-self: center;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-stretch {
+  align-self: stretch;
+}
+
+.evoe .evoe-icon {
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+.evoe i,
+.evoe .dashicons,
+.evoe .evoe-svg,
+.evoe .evoe-emoji {
+  font-size: var(--es-icon-size);
+  width: auto;
+  height: auto;
+  color: var(--es-icon-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.evoe .dashicons {
+  font-size: var(--es-icon-size);
+  width: var(--es-icon-size);
+  height: var(--es-icon-size);
+}
+.evoe .evoe-svg svg {
+  width: var(--es-icon-size);
+  height: var(--es-icon-size);
+  fill: var(--es-icon-color);
+}
+.evoe .evoe-text {
+  margin: 0;
+}
+
+/* Variants */
+.evoe.chip-soft {
+  background: var(--es-bg);
+  border: 1px solid transparent;
+}
+.evoe.chip-outline {
+  background: transparent;
+  border: 1px solid var(--es-bd);
+}
+.evoe.chip-solid {
+  background: var(--es-text-color);
+  color: #fff;
+  --es-icon-color: #fff;
+  border: 1px solid transparent;
+}
+
+/* Separator */
+.evoe .evoe-sep {
+  opacity: 0.6;
+  margin: 0 var(--es-sep-gap);
+}
+
+/* Hover */
+.evoe.hover-lift .evoe-link {
+  transition: transform 0.25s ease;
+}
+.evoe.hover-lift .evoe-link:hover {
+  transform: translateY(-4px);
+}
+.evoe.hover-pulse .evoe-link:hover .evoe-icon {
+  animation: evoe-pulse 0.6s ease both;
+}
+@keyframes evoe-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.evoe.hover-h-rotate .evoe-link {
+  transition: transform 0.25s ease;
+}
+.evoe.hover-h-rotate .evoe-link:hover .evoe-icon {
+  transform: rotate(15deg);
+}
+
+/* Scroll animations */
+.es-anim {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.es-anim.es-anim-fade {
+  transform: none;
+}
+.es-anim.es-anim-slide-up {
+  transform: translateY(16px);
+}
+.es-anim.es-anim-slide-left {
+  transform: translateX(16px);
+}
+.es-anim.es-anim-slide-right {
+  transform: translateX(-16px);
+}
+.es-anim.es-anim-zoom {
+  transform: scale(0.94);
+}
+.es-anim.es-anim-rotate {
+  transform: rotate(-6deg);
+}
+.es-anim.es-in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity var(--es-dur, 600ms) ease var(--es-delay, 0ms),
+    transform var(--es-dur, 600ms) ease var(--es-delay, 0ms);
+}
