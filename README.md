@@ -1,61 +1,61 @@
 # Evocative Elements (Uncode/WPBakery)
 
-Pack d'éléments personnalisés pour Uncode (WPBakery) avec animations & styles unifiés.
+Custom elements pack for Uncode (WPBakery) with animations & unified styles.
 
-## Éléments ajoutés dans WP Bakery
+## Elements Added to WP Bakery
 
-Ce plugin ajoute les éléments suivants dans WP Bakery Page Builder :
+This plugin adds the following elements to WP Bakery Page Builder:
 
 ### 1. **EE • Icon Text**
-- **Description** : Icône + texte style pilule
-- **Usage** : Permet d'afficher une icône avec du texte dans un style "chip" ou "badge"
-- **Fonctionnalités** :
-  - Support de plusieurs sources d'icônes (FontAwesome/Uncode, Dashicons, SVG, Emoji)
-  - Séparateur personnalisable entre l'icône et le texte
-  - Styles configurables (couleurs, background, bordure, padding, radius)
-  - Effets de survol (Lift, Pulse, Rotate)
-  - Animations d'apparition
-  - Support des liens
+- **Description**: Icon + text in pill style
+- **Usage**: Displays an icon with text in a "chip" or "badge" style
+- **Features**:
+  - Support for multiple icon sources (FontAwesome/Uncode, Dashicons, SVG, Emoji)
+  - Customizable separator between icon and text
+  - Configurable styles (colors, background, border, padding, radius)
+  - Hover effects (Lift, Pulse, Rotate)
+  - Appearance animations
+  - Link support
 
 ### 2. **EE • Icon List**
-- **Description** : Liste verticale de "chips" icône+texte
-- **Usage** : Crée une liste d'éléments avec icône et texte
-- **Fonctionnalités** :
-  - Ajout de plusieurs lignes via param_group
-  - Chaque ligne peut avoir sa propre icône et son texte
-  - Support des liens pour chaque élément
-  - Gap personnalisable entre les lignes
-  - Styles unifiés avec Icon Text
-  - Animations d'apparition
+- **Description**: Vertical list of icon+text "chips"
+- **Usage**: Creates a list of elements with icon and text
+- **Features**:
+  - Add multiple rows via param_group
+  - Each row can have its own icon and text
+  - Link support for each element
+  - Customizable gap between rows
+  - Unified styles with Icon Text
+  - Appearance animations
 
 ### 3. **EE • Badge KPI**
-- **Description** : KPI (valeur + label) avec icône
-- **Usage** : Affiche un indicateur de performance clé avec une valeur et un label
-- **Fonctionnalités** :
-  - Affichage d'une valeur (ex: "120%") et d'un label (ex: "Growth")
-  - Support de plusieurs sources d'icônes
-  - Styles configurables
-  - Effets de survol
-  - Animations d'apparition
-  - Support des liens
+- **Description**: KPI (value + label) with icon
+- **Usage**: Displays a key performance indicator with a value and label
+- **Features**:
+  - Display of a value (e.g., "120%") and a label (e.g., "Growth")
+  - Support for multiple icon sources
+  - Configurable styles
+  - Hover effects
+  - Appearance animations
+  - Link support
 
-## Catégorie dans WP Bakery
+## WP Bakery Category
 
-Tous les éléments sont regroupés dans la catégorie **"Evocative Elements"** dans l'interface de WP Bakery Page Builder.
+All elements are grouped in the **"Evocative Elements"** category in the WP Bakery Page Builder interface.
 
 ## Installation
 
-1. Télécharger le plugin
-2. Installer via WordPress (Extensions > Ajouter > Téléverser)
-3. Activer le plugin
-4. Les nouveaux éléments apparaissent dans WP Bakery Page Builder
+1. Download the plugin
+2. Install via WordPress (Plugins > Add New > Upload)
+3. Activate the plugin
+4. The new elements appear in WP Bakery Page Builder
 
-## Prérequis
+## Requirements
 
 - WordPress
-- Thème Uncode
+- Uncode Theme
 - WP Bakery Page Builder (Visual Composer)
 
 ## Version
 
-Version actuelle : 2.0.0
+Current version: 2.0.0
