@@ -12,7 +12,7 @@ class Element {
   const SLUG = 'evoe_icon_text';
 
   public function __construct() {
-    add_action('vc_before_init', [$this, 'vc_map']);
+    $this->vc_map();
     add_shortcode(self::SLUG, [$this, 'render']);
   }
 
