@@ -45,16 +45,35 @@ All elements are grouped in the **"Evocative Elements"** category in the WP Bake
 
 ## Installation
 
-1. Download the plugin
-2. Install via WordPress (Plugins > Add New > Upload)
-3. Activate the plugin
-4. The new elements appear in WP Bakery Page Builder
+1. **Prérequis obligatoires** :
+   - WordPress
+   - Thème Uncode installé et activé
+   - WPBakery Page Builder installé et activé (inclus avec Uncode)
 
-## Requirements
+2. **Installation du plugin** :
+   - Téléchargez ou clonez ce plugin
+   - Placez le dossier dans `wp-content/plugins/`
+   - OU uploadez le ZIP via Extensions > Ajouter > Téléverser
 
-- WordPress
-- Uncode Theme
-- WP Bakery Page Builder (Visual Composer)
+3. **Activation** :
+   - Allez dans Extensions > Extensions installées
+   - Activez "Evocative Elements (Uncode/WPBakery)"
+   - Si WPBakery n'est pas activé, vous verrez un message d'erreur
+
+4. **Vérification** :
+   - Éditez une page avec WPBakery Page Builder
+   - Cliquez sur "Ajouter un élément"
+   - Cherchez la catégorie **"Evocative Elements"**
+   - Vous devriez voir les 3 éléments : EE • Icon Text, EE • Icon List, EE • Badge KPI
+
+## Dépannage
+
+**Les éléments n'apparaissent pas ?**
+
+1. Vérifiez que WPBakery Page Builder est bien activé
+2. Désactivez puis réactivez le plugin Evocative Elements
+3. Videz le cache WordPress (si vous utilisez un plugin de cache)
+4. Vérifiez qu'il n'y a pas de message d'erreur dans Extensions > Extensions installées
 
 ## Version
 
