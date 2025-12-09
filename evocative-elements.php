@@ -16,7 +16,7 @@ define('EVOE_VER',  '2.0.0');
 require_once EVOE_BASE . 'inc/Autoload.php';
 Evocative\Elements\Autoload::init();
 
-add_action('plugins_loaded', function () {
+add_action('vc_before_init', function () {
   // assets communs
   Evocative\Elements\Assets::register();
   // enregistre tous les items
